@@ -1,6 +1,25 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Welcome to Uzi V Cooperations</h1>
-<p>Your tech-driven solutions start here.</p>
+<section class="hero">
+    <h1>Welcome to UV Cooperations</h1>
+    <p>
+        UV Cooperations is a futuristic, tech-driven company based in Abuja, Nigeria. We focus on AI, data,
+        and next-generation solutions, empowering individuals and businesses with cutting-edge digital
+        skills, modern gadgets, and innovative solutions across multiple fields:
+    </p>
+    <ul>
+        <li>Business & Finance</li>
+        <li>Health & Agriculture</li>
+        <li>Research, Hyper-Innovations & Discoveries</li>
+        <li>Communications & Transportation</li>
+        <li>Sports & Technology</li>
+        <li>Climate & the Digital World</li>
+    </ul>
+    <p>
+        At UV Cooperations, we are shaping the future by blending technology, innovation, and practical solutions
+        to create meaningful impact in Nigeria and beyond.
+    </p>
+    <a href="{{ url_for('about') }}" class="btn-primary">Learn More About Us</a>
+</section>
 {% endblock %}

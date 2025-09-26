@@ -2,19 +2,23 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/")
-def index():
+# Home page
+@app.route('/')
+def home():  # Make sure function is named 'home'
     return render_template("index.html")
 
-@app.route("/about")
+# About page
+@app.route('/about')
 def about():
     return render_template("about.html")
 
-@app.route("/services")
+# Services page
+@app.route('/services')
 def services():
     return render_template("services.html")
 
-@app.route("/contact")
+# Contact page
+@app.route('/contact')
 def contact():
     return render_template("contact.html")
 
