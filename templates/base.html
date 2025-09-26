@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Uzi V Cooperations</title>
+    <title>UV Cooperations</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
@@ -12,7 +12,11 @@
                 <li><a href="{{ url_for('home') }}">Home</a></li>
                 <li><a href="{{ url_for('about') }}">About</a></li>
                 <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('blog') }}">Blog</a></li>
+                <li><a href="{{ url_for('careers') }}">Careers</a></li>
                 <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
+                <li><a href="{{ url_for('solutions') }}">Solutions</a></li>
             </ul>
         </nav>
     </header>
@@ -20,7 +24,7 @@
     {% block content %}{% endblock %}
 
     <footer>
-        <p>&copy; 2025 Uzi V Cooperations. All rights reserved.</p>
+        <p>&copy; 2025 UV Cooperations. All rights reserved.</p>
     </footer>
 </body>
 </html>
