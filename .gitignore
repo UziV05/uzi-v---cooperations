@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+.venv/
+venv/
+.Python
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# logs
+*.log
+
+# pipenv / poetry
+Pipfile.lock
+
+# Node (if any)
+node_modules/
