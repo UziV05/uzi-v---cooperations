@@ -1,7 +1,21 @@
 {% extends "base.html" %}
+
+{% block title %}Home - UV Cooperations{% endblock %}
+
 {% block content %}
 <section class="hero">
-    <h1>Welcome to <span>Uzi V Cooperations</span></h1>
-    <p>Your hub for innovation, technology, and everything digital.</p>
+  <h1>Shaping Tomorrow’s Tech, Today</h1>
+  <p>Innovating with AI, software, and data-driven solutions for the future.</p>
+  <a href="{{ url_for('contact') }}" class="cta-btn">Get Started</a>
+</section>
+
+<section class="services-preview">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">AI & Automation</div>
+    <div class="card">Data Analytics</div>
+    <div class="card">Software Development</div>
+    <div class="card">Cybersecurity</div>
+  </div>
 </section>
 {% endblock %}

@@ -1,45 +1,37 @@
-<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <!-- Define gradient animation -->
   <defs>
-    <!-- Gradient for square background -->
-    <linearGradient id="squareGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ff00ff">
-        <animate attributeName="stop-color" values="#ff00ff;#ffea00;#00f0ff;#ff00ff" dur="6s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="50%" stop-color="#00f0ff">
-        <animate attributeName="stop-color" values="#00f0ff;#00ff7f;#ff0080;#00f0ff" dur="6s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#ffea00">
-        <animate attributeName="stop-color" values="#ffea00;#ff00ff;#7928ca;#ffea00" dur="6s" repeatCount="indefinite"/>
-      </stop>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f" />
+      <stop offset="25%" stop-color="#0ff" />
+      <stop offset="50%" stop-color="#f0f" />
+      <stop offset="75%" stop-color="#ff0" />
+      <stop offset="100%" stop-color="#0f0" />
+      <animateTransform attributeName="gradientTransform" type="rotate"
+        from="0 0.5 0.5" to="360 0.5 0.5" dur="8s" repeatCount="indefinite" />
     </linearGradient>
-
-    <!-- Gradient animation for text -->
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="200%" y2="0%">
-      <stop offset="0%" stop-color="#ffea00">
-        <animate attributeName="stop-color" values="#ffea00;#ff0080;#00d4ff;#ffea00" dur="4s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%" stop-color="#00d4ff">
-        <animate attributeName="stop-color" values="#00d4ff;#00ff7f;#ff00ff;#00d4ff" dur="4s" repeatCount="indefinite" />
-      </stop>
-    </linearGradient>
-
-    <!-- Glow effect -->
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
-  <!-- Bright glowing square background -->
-  <rect x="15" y="15" width="170" height="170" rx="25" ry="25"
-        fill="url(#squareGrad)" stroke="white" stroke-width="5"/>
+  <!-- Background square with animated gradient -->
+  <rect width="300" height="300" rx="40" fill="url(#grad)" />
 
-  <!-- Glowing text -->
-  <text x="50%" y="55%" text-anchor="middle" font-size="38" font-weight="bold"
-        fill="url(#textGrad)" filter="url(#glow)" dy=".3em">
-    UZIV
+  <!-- Centered UV text with glowing gradient -->
+  <text x="50%" y="55%" font-size="140" font-family="Montserrat, sans-serif"
+    font-weight="bold" text-anchor="middle" fill="url(#grad)" stroke="#fff" stroke-width="3">
+    UV
+  </text>
+
+  <!-- Glow effect -->
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+    <feMerge>
+      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <text x="50%" y="55%" font-size="140" font-family="Montserrat, sans-serif"
+    font-weight="bold" text-anchor="middle" fill="url(#grad)" filter="url(#glow)">
+    UV
   </text>
 </svg>
