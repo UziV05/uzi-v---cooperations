@@ -1,23 +1,38 @@
 {% extends "base.html" %}
-
-{% block title %}Blog - UV Cooperations{% endblock %}
-
 {% block content %}
-<section class="blog">
-  <h1>Insights & Tech Trends</h1>
-  <div class="blog-list">
-    <article class="blog-card">
-      <h2>The Future of AI in Africa</h2>
-      <p>How AI is reshaping industries across the continent.</p>
-    </article>
-    <article class="blog-card">
-      <h2>Top 5 Skills for 2025</h2>
-      <p>Upgrade your career with these in-demand tech skills.</p>
-    </article>
-    <article class="blog-card">
-      <h2>Cybersecurity for Businesses</h2>
-      <p>Protect your company with smart security strategies.</p>
-    </article>
+<section class="section fade-in">
+  <h1>Our Insights & Updates</h1>
+  <p>
+    Stay connected with the latest stories, innovations, and research insights from UV Cooperations.
+  </p>
+
+  <div class="blog-list fade-in">
+    <div class="blog-card">
+      <h3>How AI is Transforming Agriculture</h3>
+      <p>Discover how predictive analytics and smart sensors are revolutionizing food production in Nigeria.</p>
+      <a href="#" class="cta-btn">Read More</a>
+    </div>
+
+    <div class="blog-card">
+      <h3>The Future of Urban Mobility</h3>
+      <p>Exploring UV Coop’s plans for smart transportation systems across African cities.</p>
+      <a href="#" class="cta-btn">Read More</a>
+    </div>
+
+    <div class="blog-card">
+      <h3>Data Ethics in Africa’s Digital Era</h3>
+      <p>Our perspective on privacy, transparency, and responsible innovation.</p>
+      <a href="#" class="cta-btn">Read More</a>
+    </div>
   </div>
+</section>
+
+<section class="section fade-in">
+  <h2>Share Your Thoughts</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <textarea rows="4" placeholder="Leave a comment..." required></textarea>
+    <button type="submit" class="cta-btn">Post Comment</button>
+  </form>
 </section>
 {% endblock %}

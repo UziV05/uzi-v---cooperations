@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero fade-in">
+    <h1>Welcome to <span class="brand">UV Cooperations</span></h1>
+    <h3 class="motto"><i>Everything Tech. Everywhere. For Everyone.</i></h3>
+    <p>
+        We’re a forward-thinking, innovation-focused tech company based in Abuja, Nigeria —
+        empowering individuals and organizations through AI, Data, and Next-Gen digital solutions
+        that shape the future of how the world works, learns, and connects. We're a futuristic,
+        tech-driven ecosystem that empowers individuals, organizations, students and industries
+        with next-generation tools in AI, Data science, and Hyper-innovation.
+        Our mission is to build smarter systems, sustainable networks, and real-world impact
+        through ICT.
+    </p>
+    <a href="{{ url_for('about') }}" class="btn-primary">Discover Who We Are</a>
+</section>
+
+<!-- Services Overview -->
+<section class="section services fade-in">
+    <h2>Our Core Fields</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>AI & Machine Learning</h3>
+            <p>Building intelligent systems and automations that empower business decisions, healthcare, and research.</p>
+        </div>
+        <div class="card">
+            <h3>Data & Cloud Solutions</h3>
+            <p>Helping companies collect, visualize, and manage data using secure and scalable cloud infrastructures.</p>
+        </div>
+        <div class="card">
+            <h3>Digital Innovation</h3>
+            <p>From modern apps to web platforms — we innovate solutions that simplify life and accelerate digital growth.</p>
+        </div>
+        <div class="card">
+            <h3>Tech Training & Research</h3>
+            <p>Upskilling the next generation of tech leaders and researchers across industries in Africa and beyond.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Projects / Portfolio -->
+<section class="section projects fade-in">
+    <h2>Our Vision in Action</h2>
+    <p>Take a peek at some of our most transformative and impactful projects.</p>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>AgroAI Initiative</h3>
+            <p>AI-powered crop monitoring for Nigerian farmers improving yield by 40%.</p>
+        </div>
+        <div class="project-card">
+            <h3>HealthSync</h3>
+            <p>A digital system bridging patient data between hospitals and clinics seamlessly.</p>
+        </div>
+        <div class="project-card">
+            <h3>FinData Pro</h3>
+            <p>Secure data dashboards for banks to monitor, analyze, and predict financial flows in real-time.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section testimonials fade-in">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <p>“UV Cooperations transformed our business with their AI integration tools — game-changing efficiency!”</p>
+            <h4>– Adaobi C. Uchendu, Fintech Client</h4>
+        </div>
+        <div class="testimonial">
+            <p>“Their data solutions helped us make sense of chaos. Their approach is professional and truly innovative.”</p>
+            <h4>– David O. Moses, Research Partner</h4>
+        </div>
+        <div class="testimonial">
+            <p>“From design to deployment, the UV team delivers with precision and passion. We love working with them!”</p>
+            <h4>– Nkechi F. Anayo, Startup Founder</h4>
+        </div>
+    </div>
+</section>
+
+<!-- Partners (example placeholders - replace images in static/images/) -->
+<section class="section fade-in">
+  <h2>Our Partners</h2>
+  <p>We collaborate with forward-thinking organizations and research hubs.</p>
+  <div class="cards" style="gap:1rem; padding:1rem 2rem;">
+    <div class="card"><img src="{{ url_for('static', filename='images/logo1.png.jpeg') }}" alt="Partner 1" style="max-width:120px;"></div>
+    <div class="card"><img src="{{ url_for('static', filename='images/logo2.png.png') }}" alt="Partner 2" style="max-width:120px;"></div>
+    <div class="card"><img src="{{ url_for('static', filename='images/logo3.png.png') }}" alt="Partner 3" style="max-width:120px;"></div>
+    <div class="card"><img src="{{ url_for('static', filename='images/logo4.png.jpeg') }}" alt="Partner 4" style="max-width:120px;"></div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section cta fade-in">
+    <h2>Let’s Build the Future Together</h2>
+    <p>Whether you’re a startup, institution, or enterprise — UV Cooperations is ready to create, connect, and collaborate.</p>
+    <a href="{{ url_for('contact') }}" class="btn-primary">Get In Touch</a>
+</section>
+
+{% endblock %}

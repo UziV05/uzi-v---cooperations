@@ -1,22 +1,40 @@
 {% extends "base.html" %}
-
-{% block title %}Careers - UV Cooperations{% endblock %}
-
 {% block content %}
-<section class="careers">
+<section class="section fade-in">
   <h1>Join Our Team</h1>
-  <p>Help us build the future of technology.</p>
+  <p>
+    At UV Cooperations, we’re always looking for bright, creative minds ready to shape the future of tech in Africa and beyond.
+  </p>
+  <p>
+    Whether you’re a developer, designer, analyst, or innovator, there’s a place for you here — a platform to learn, grow, and redefine what’s possible.
+  </p>
 
-  <h2>Open Roles</h2>
-  <div class="jobs">
-    <div class="job-card">
-      <h3>Frontend Developer</h3>
-      <p>Remote | Full-time</p>
-    </div>
+  <div class="jobs fade-in">
     <div class="job-card">
       <h3>AI Research Intern</h3>
-      <p>Abuja | Internship</p>
+      <p>Help us explore neural networks and predictive modeling for real-world solutions.</p>
+      <span class="status open">🟢 Open</span>
+    </div>
+    <div class="job-card">
+      <h3>Frontend Developer</h3>
+      <p>Build immersive digital experiences using React / Flask / Python / Tailwind.</p>
+      <span class="status closed">🔴 Closed</span>
+    </div>
+    <div class="job-card">
+      <h3>Data Analyst</h3>
+      <p>Transform complex datasets into actionable insights for our partners and projects.</p>
+      <span class="status open">🟢 Open</span>
     </div>
   </div>
+</section>
+
+<section class="section fade-in">
+  <h2>Why Work With Us?</h2>
+  <ul class="benefits">
+    <li>⚡ Cutting-edge technology exposure</li>
+    <li>🌍 Impactful projects that shape communities</li>
+    <li>🤝 Collaborative & inclusive team culture</li>
+    <li>🚀 Learning opportunities & mentorship</li>
+  </ul>
 </section>
 {% endblock %}

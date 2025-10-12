@@ -1,22 +1,39 @@
 {% extends "base.html" %}
-
-{% block title %}Portfolio - UV Cooperations{% endblock %}
-
 {% block content %}
-<section class="portfolio">
+<section class="section fade-in">
   <h1>Our Portfolio</h1>
-  <div class="projects">
+  <p>Explore some of the innovative works, prototypes, and visual showcases built by our creative teams.</p>
+
+  <div class="projects-grid">
     <div class="project-card">
-      <h2>AI Chatbot for Healthcare</h2>
-      <p>Reduced wait times by 40% in hospitals.</p>
+      <img src="{{ url_for('static', filename='images/project1.jpg.jpeg') }}" alt="Project 1" class="portfolio-img">
+      <h3>Smart Home Automation</h3>
+      <p>AI-powered systems that redefine convenience, comfort, and control.</p>
     </div>
     <div class="project-card">
-      <h2>Smart Agriculture System</h2>
-      <p>Boosted farm yields by 63% using IoT sensors.</p>
+      <img src="{{ url_for('static', filename='images/project2.jpg.jpeg') }}" alt="Project 2" class="portfolio-img">
+      <h3>Urban Transport AI</h3>
+      <p>Integrating real-time data analytics into Nigeria’s transport sector.</p>
     </div>
     <div class="project-card">
-      <h2>E-commerce Growth Hack</h2>
-      <p>Scaled sales by 120% for a retail brand.</p>
+      <img src="{{ url_for('static', filename='images/project3.jpg.jpeg') }}" alt="Project 3" class="portfolio-img">
+      <h3>Digital Skills Hub</h3>
+      <p>Empowering youth through immersive tech education programs.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="testimonials fade-in">
+  <h2>Client Feedback</h2>
+  <div class="testimonial-container">
+    <div class="testimonial">
+      <p>"A true partner in innovation. Their projects always exceed expectations!"</p>
+      <h4>— NovaTech Digital</h4>
+    </div>
+    <div class="testimonial">
+      <p>"The team’s creativity and technical precision make UV Cooperations stand out."</p>
+      <h4>— Horizon Industries</h4>
     </div>
   </div>
 </section>

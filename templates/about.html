@@ -1,13 +1,147 @@
 {% extends "base.html" %}
-
 {% block content %}
-<h1>About Us</h1>
-<p>UV Cooperations is a futuristic tech-driven company based at Federal Capital Territory of Abuja, Nigeria.
-Focused on AI, data, and next-gen solutions, with commitments to empowering individuals and businesses with
-cutting-edge digital skills, modern digital gadgets, and innovative solutions to fields like: Businesses,
-Finance, Health, Agriculture, Research, Hyper-Innovations & Discoveries, Communications, Transportation,
-Sports, Technology, Climate and our ever-developing Digital World.</p>
+<section class="section about fade-in">
+  <h1>About UV Cooperations</h1>
 
-<p>At UV Cooperations, we are shaping the future by blending technology, innovation, and practical solutions
-to create meaningful impact in Nigeria and beyond.</p>
+  <p>
+    <strong>UV Cooperations</strong> stands as a multidisciplinary innovation hub, founded to bridge
+    technology and human potential. Headquartered in Abuja, Nigeria, we drive growth and transformation
+    across industries through advanced digital systems, AI solutions, and research-driven innovation.
+  </p>
+
+  <div class="about-grid">
+    <div>
+      <h2 id="vision">🌍 Our Vision</h2>
+      <p>To redefine Africa’s technological landscape by building smart systems that empower every sector — from health to finance — making technology accessible, human, and sustainable.</p>
+    </div>
+
+    <div>
+      <h2 id="mission">⚙️ Our Mission</h2>
+      <p>We integrate creativity and innovation to deliver data-backed, intelligent, and efficient digital solutions for individuals, businesses, and governments.</p>
+    </div>
+
+    <div>
+      <h2>💎 Core Values</h2>
+      <ul>
+        <li>Integrity and Excellence</li>
+        <li>Creativity and Continuous Learning</li>
+        <li>Impact-driven Solutions</li>
+        <li>Human-centered Technology</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 id="team">🚀 Future Focus</h2>
+      <p>UV Coop. is expanding into deep tech, space data, and AI sustainability to ensure our communities thrive in the age of automation and intelligence.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Additional informational sections (added, non-destructive) ===== -->
+<section class="section fade-in">
+  <h2>How We Work</h2>
+  <p>
+    We combine user-centered design, data-driven research, and pragmatic engineering. Each project begins with discovery — engaging stakeholders, mapping core needs, and designing prototypes.
+    We then build and iterate rapidly, using strong testing and monitoring practices so solutions are robust and production-ready.
+  </p>
+
+  <div class="cards" style="margin-top:1.2rem;">
+    <div class="card">
+      <h3>Discovery & Research</h3>
+      <p>Problem framing, user research, and feasibility studies to ensure impact and sustainability.</p>
+    </div>
+    <div class="card">
+      <h3>Design & Prototyping</h3>
+      <p>Rapid prototyping to validate concepts and align stakeholders early in the process.</p>
+    </div>
+    <div class="card">
+      <h3>Build & Deploy</h3>
+      <p>Secure, scalable engineering practices with continuous integration and monitoring.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section fade-in">
+  <h2>Impact & Use Cases</h2>
+  <p>
+    Our solutions are applied across sectors: precision agriculture that improves yields, health platforms that connect clinics and patients,
+    financial dashboards for stronger business decisions, and education programs that upskill youth with real-world tools.
+  </p>
+
+  <ul class="about-list" style="margin-top:1rem; text-align:left; max-width:900px; margin-left:auto; margin-right:auto;">
+    <li><strong>Agriculture:</strong> sensor-driven insights to reduce waste and increase production efficiency.</li>
+    <li><strong>Health:</strong> patient triage & data analytics for better outcomes in clinics and rural centers.</li>
+    <li><strong>Finance:</strong> predictive dashboards that improve cashflow forecasting and risk management.</li>
+    <li><strong>Education:</strong> bootcamps and mentorship programs that place talent into real tech roles.</li>
+  </ul>
+</section>
+
+<section class="section fade-in">
+  <h2>Meet the Team</h2>
+  <p>Small, cross-functional teams that combine research, engineering, and design.</p>
+
+  <div class="cards" style="margin-top:1rem;">
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/team1.jpg.jpg') }}" alt="Team Member" style="width:100%; border-radius:8px; margin-bottom:0.8rem;">
+      <h3>Mr. Anonye V.</h3>
+      <p>Founder(CEO) & Lead Innovator — strategy, product vision, and partnerships.</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/team2.jpg.jpg') }}" alt="Team Member" style="width:100%; border-radius:8px; margin-bottom:0.8rem;">
+      <h3>Miss. Gloria U.</h3>
+      <p>AI Engineer — model development, research & deployment.</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/team3.jpg.jpeg') }}" alt="Team Member" style="width:100%; border-radius:8px; margin-bottom:0.8rem;">
+      <h3>Mr. George I.</h3>
+      <p>Graphical/Software Technician — develop insightful & engaging designs, applications & softwares</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/team4.jpg.jpg') }}" alt="Team Member" style="width:100%; border-radius:8px; margin-bottom:0.8rem;">
+      <h3>Mr. Victor O.</h3>
+      <p>Product Scientist & UX — crafting human-centered experiences, visualisation, dashboards and prototypes.</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/team5.jpg') }}" alt="Team Member" style="width:100%; border-radius:8px; margin-bottom:0.8rem;">
+      <h3>Miss. Confidence A.</h3>
+      <p>Public Relations Officer — strategist on social media awareness, marketing, information publishment and general publicity</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/team6.jpg.jpg') }}" alt="Team Member" style="width:100%; border-radius:8px; margin-bottom:0.8rem;">
+      <h3>Miss. Christiana U.</h3>
+      <p>Project Manager — overseeing of project execution, ensuring timely delivery and stakeholders satisfactions.</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/team7.jpg.jpg') }}" alt="Team Member" style="width:100%; border-radius:8px; margin-bottom:0.8rem;">
+      <h3>Mr. Emmanuel J.</h3>
+      <p>Business Intelligence Admin — creating and management of business intelligence tools  and analytics platforms.</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/team8.jpg.jpg') }}" alt="Team Member" style="width:100%; border-radius:8px; margin-bottom:0.8rem;">
+      <h3>Miss. Nancy C.</h3>
+      <p>Database Administrator (DBAs) — manage database environments, ensures data security and access.</p>
+    </div>
+  </div>
+
+</section>
+
+<section class="section fade-in">
+  <h2>Milestones & Timeline</h2>
+  <div style="max-width:900px; margin:0 auto; text-align:left;">
+    <ul style="list-style: none; padding-left:0;">
+      <li><strong>2021</strong> — UV Cooperations funded the first local solar-powered & AI sunglasses launched.</li>
+      <li><strong>2022</strong> — Flagged off and commissioned ICT training bootcamps and first enterprise deployments.</li>
+      <li><strong>2023</strong> — Expanded research partnerships and commercial product lines.</li>
+      <li><strong>2024</strong> — Partnered with the World Health Organisation(WHO) and the National Bureau of Statistics(NBS) to carry out a research based survey in Northern Nigeria.</li>
+      <li><strong>2025</strong> — Affiliated with ZionTechHub in developing a new statistical model for more advanced analytical researches.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section fade-in">
+  <h2>Get Involved</h2>
+  <p>
+    Interested in partnering, hiring us, or joining the team? <a href="{{ url_for('contact') }}" class="btn-primary">Contact Us</a> — we’re always open to collaboration.
+  </p>
+</section>
 {% endblock %}

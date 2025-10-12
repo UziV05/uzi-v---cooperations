@@ -1,18 +1,51 @@
 {% extends "base.html" %}
-
-{% block title %}Contact - UV Cooperations{% endblock %}
-
 {% block content %}
-<section class="contact">
+<section class="contact section fade-in">
   <h1>Contact Us</h1>
-  <ul>
-    <li>Email: <a href="mailto:contact@uzivcoop.ng.com">contact@uzivcoop.ng.com</a></li>
-    <li>Phone: +234 902 484 6685, +234 805 230 2319</li>
-    <li>Instagram: <a href="https://instagram.com/uzivco" target="_blank">@uzivco</a></li>
-    <li>Twitter (X): <a href="https://x.com/uzivco" target="_blank">@uzivco</a></li>
-    <li>Facebook: <a href="https://facebook.com/uzivcoop" target="_blank">@uzivcoop</a></li>
-    <li>LinkedIn: <a href="https://linkedin.com/company/uzivcooperations" target="_blank">uzivcooperations</a></li>
-    <li>Location: Plot B10F4, No. 14 Olayekunmi Marade Avenue, CBD District, Abuja.</li>
-  </ul>
+  <p>We’d love to hear from you — reach out for collaborations, inquiries, or partnerships.</p>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="cta-btn">Send Message</button>
+  </form>
+
+  <div class="contact-details fade-in">
+    <h3>Our Office</h3>
+    <p>Federal Housing Authority (FHA), Lugbe, F.C.T Abuja, Nigeria</p>
+    <p>📞 +234 902 484 6685 | +234 805 302 2319</p>
+    <p>✉️ <a href="mailto:contact@uvcoop.org.ng.com">contact@uvcoop.org.ng.com</a></p>
+  </div>
+
+  <div class="socials fade-in">
+    <h3>Connect With Us</h3>
+    <ul>
+      <li><a href="https://facebook.com/uvcooperations" target="_blank">Facebook</a></li>
+      <li><a href="https://twitter.com/uvcooperations" target="_blank">X (Twitter)</a></li>
+      <li><a href="https://instagram.com/uvcooperations" target="_blank">Instagram</a></li>
+      <li><a href="https://linkedin.com/in/uvcooperations" target="_blank">LinkedIn</a></li>
+      <li><a href="https://youtube.com/@uvcoop.ng" target="_blank">YouTube</a></li>
+      <li><a href="https://tiktok.com/@uvcoop.ng" target="_blank">TikTok</a></li>
+    </ul>
+  </div>
+
+  <div class="testimonials fade-in">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <p>"UV Cooperations transformed our digital operations completely. Their AI-driven insights are world-class!"</p>
+        <h4>— Crystal Tech Hub</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Innovative, professional, and futuristic. UV Cooperations is redefining what it means to be tech-driven in Africa."</p>
+        <h4>— DevEdge Solutions</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Their communication and project execution are seamless. We can’t recommend them enough!"</p>
+        <h4>— PrimeVision Studios</h4>
+      </div>
+    </div>
+  </div>
 </section>
 {% endblock %}
